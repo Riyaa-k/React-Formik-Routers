@@ -41,7 +41,7 @@ const Login = () => {
 
 
   })
-  console.log(formik.errors)
+  console.log(formik.touched)
 
   
 
@@ -49,11 +49,14 @@ const Login = () => {
     <div className="container">
       <div className="loginform">
           <form onSubmit={formik.handleSubmit}>
-            <input type="text" placeholder="Name" name="name" value={formik.values.name} onChange={formik.handleChange}/>
+            <input type="text" placeholder="Name" name="name" value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
+            {formik.touched.name && formik.errors.name ? <div className="error">{formik.errors.name}</div> : null}
             <br />
-            <input type="text" placeholder="Email" name="email" value={formik.values.email} onChange={formik.handleChange}/>
+            <input type="text" placeholder="Email" name="email" value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
+            {formik.touched.email && formik.errors.email ? <div className="error">{formik.errors.email}</div> : null}
             <br />
-            <input type="text" placeholder="Password" name="password" value={formik.values.password} onChange={formik.handleChange}/>
+            <input type="text" placeholder="Password" name="password" value={formik.values.password} onChange={formik.handleChange} onBlur={formik.handleBlur}/>
+            {formik.touched.password && formik.errors.password ? <div className="error">{formik.errors.password}</div> : null}
             <br />
             <button type="submit">Submit</button>
 
