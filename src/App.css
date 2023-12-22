@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+}
+.navbar{
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  border: 10px;
+  font-size: 25px;
+  align-items: center;
+
+  
+}
+.link{
+  text-decoration: none;
+  color:white;
+  font-size: 30px;
+  margin-left: 30px;
+}
+.login, .about{
+  
+  color: brown;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginform{
+  
+  background-color: black;
+  margin: 50px;
+
+  
+  padding: 80px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(42, 18, 18, 0.2), 0 6;
+
+}
+input{
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  width: 300px;
+  font-size: medium;
+  font-weight: 500;
+  font-style: italic;
+
+}
+button{
+  background-color: yellow;
+  color: white;
+  height: 50px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100px;
+  margin-left: 100px;
+  font-size: large;
+  font-weight: 800;
+
+  
+}
+button:hover{
+  background-color: gold;
+}
